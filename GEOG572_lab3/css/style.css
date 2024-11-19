@@ -3,21 +3,18 @@
 
 body {
     font-family: 'Pattaya', sans-serif;
-    background-color: #f3f4f6;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
-    background-image: url("../assets/background.jpg");
-    background-size: cover;
-    background-position: center;
+    background-image: url("../assets/background_image.png");
+    background-repeat: repeat;
 }
 
 .title {
     position: relative;
     text-align: center;
+    width: 100%;
+    height: 100vh;
 }
 
 .title h1 {
@@ -32,8 +29,12 @@ body {
 }
 
 .title-image {
-    width: 100%;
+    width: 50%;
     height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* Custom font styles */

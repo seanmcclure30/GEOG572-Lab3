@@ -53,7 +53,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px 20px; /* Triple the vertical space */
+    padding: 150px;
 }
 
 .content-image {
@@ -64,7 +64,7 @@ body {
 
 .content-text {
     font-family: 'Charm', cursive;
-    font-size: 20px;
+    font-size: 50px;
     color: white;
     text-shadow: 1px 1px 2px black;
 }

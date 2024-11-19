@@ -1,20 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Baroque Stylized Chartography</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Charm&family=Great+Vibes&family=Pattaya&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="title" style="position: relative; width: 100%; height: 100vh;">
-        <img src="assets/title_image.png" alt="Title Image" class="title-image" style="width: 50%; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-        <h1 style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">Baroque Stylized Chartography</h1>
-        <h2 class="subtitle">By Sean McClure</h2>
-    </div>
-</body>
-</html>
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Charm&family=Great+Vibes&family=Pattaya&display=swap');
+
+body {
+    font-family: 'Pattaya', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("../assets/background_image.png");
+    background-repeat: repeat;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.title h1 {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 70px; /* Increased font size */
+    color: gold;
+    text-shadow: 2px 2px 4px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-image {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subtitle {
+    font-family: 'Charm', cursive;
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Custom font styles */
+.charm-regular {
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pattaya-regular {
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

@@ -1,7 +1,49 @@
-body{
-    font-family: 'Josefin Sans', sans-serif;
-}
+//slideshow functions
+    document.querySelectorAll(".slideshow-container").forEach(function(slideshow) {
+        let slideIndex = 0; 
+        showSlides(slideIndex);
+    
+        slideshow.querySelectorAll(".next").forEach(function(elem) {
+            elem.addEventListener("click", function() {
+                showSlides(slideIndex + 1); // Move to the next slide
+            });
+        });
+    
+        slideshow.querySelectorAll(".prev").forEach(function(elem) {
+            elem.addEventListener("click", function() {
+                showSlides(slideIndex - 1); // Move to the previous slide
+            });
+        });
+    
+        slideshow.querySelectorAll(".dot").forEach(function(elem) {
+            elem.addEventListener("click", function() {
+                slideIndex = Number(elem.id) - 1; 
+                showSlides(slideIndex);
+            });
+        });
+    
+        function showSlides(n) {
+            let slides = slideshow.getElementsByClassName("slide"),
+                dots = slideshow.getElementsByClassName("dot");
+    
+            if (n >= slides.length) {
+                slideIndex = 0; 
+            } else if (n < 0) {
+                slideIndex = slides.length - 1; 
+            } else {
+                slideIndex = n;
+            }
+    
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
 
-iframe{
-    height:400px;
-}
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+    
+            slides[slideIndex].style.display = "block";
+            dots[slideIndex].className += " active";
+        }
+    });
+    

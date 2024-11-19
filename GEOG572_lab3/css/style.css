@@ -1,0 +1,18 @@
+h1 {
+color:red;
+}
+
+img { 
+height:439.5px;
+width:678.5px;
+}
+.largeTitle {
+color:blue;
+font-size:72pt;
+}
+.lightGray { 
+background:rgb(230, 230, 230);
+}
+#specialLink{
+font-weight:bold;
+}

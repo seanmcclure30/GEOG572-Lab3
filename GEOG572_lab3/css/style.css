@@ -20,7 +20,7 @@ body {
 
 .title h1 {
     font-family: 'Pattaya', sans-serif;
-    font-size: 70px; /* Increased font size */
+    font-size: 70px; 
     color: gold;
     text-shadow: 2px 2px 4px black;
     position: absolute;
@@ -57,14 +57,14 @@ body {
 }
 
 .content-image {
-    max-width: 80%; /* Double the size */
+    max-width: 80%; 
     height: auto;
     margin-right: 20px;
 }
 
 .content-text {
     font-family: 'Charm', cursive;
-    font-size: 20px;
+    font-size: 40px;
     color: white;
     text-shadow: 1px 1px 2px black;
 }

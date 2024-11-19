@@ -57,14 +57,14 @@ body {
 }
 
 .content-image {
-    max-width: 40%;
+    max-width: 80%; /* Double the size */
     height: auto;
     margin-right: 20px;
 }
 
 .content-text {
     font-family: 'Charm', cursive;
-    font-size: 50px;
+    font-size: 20px;
     color: white;
     text-shadow: 1px 1px 2px black;
 }

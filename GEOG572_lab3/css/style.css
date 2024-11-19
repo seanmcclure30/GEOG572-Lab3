@@ -51,6 +51,7 @@ body {
 
 .content {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 150px;
@@ -67,6 +68,17 @@ body {
     font-size: 40px;
     color: white;
     text-shadow: 1px 1px 2px black;
+}
+
+.content-images {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.content-images .content-image {
+    max-width: 30%; /* Adjust this value as needed */
+    margin: 0 10px;
 }
 
 /* Custom font styles */

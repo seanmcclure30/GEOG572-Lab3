@@ -1,46 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-            <title>Baroque Stylized Cartography</title>
+<head>
+    <title>Baroque Stylized Web Map</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    
+    <link rel="stylesheet" href="./css/scrollmap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 
-        <!--put your external stylesheet links here-->
-        <link rel="stylesheet" href="css/style.css">
-        <!--[if IE<9]>
-            <link rel="stylesheet" href="css/style.ie.css">
-        <![endif]-->
-        
-        <!--you can also place internal styles here
-        place these within <style> tags-->  
-        
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Niconne&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="content">
+        <!--title block, background image is title image-->
+        <div class="row" style="background-image:url(assets/title-image.png)">
+            <div class="center title">
+                <!--title text-->
+                <h1>Baroque Style Web Map</h1>
+                <!--subtitle or author-->
+                <p class="author">Made by Sean McClure</p>
+            </div>
+        </div>
 
-    <body>
-        <!--put your initial page content here-->
-        <h1 class="largeTitle">Baroque Style Web Map</h1>
-        <h1 class="lightGray">GEOG572 Lab3 Sean McClure</h1>
+        <!--text block-->
+        <div class="row">
+            <div class="center">
+                <p>The goal of my submission for the Lab 3 assignment was to compose a web map in the style of 17th century Baroque paintings using Mapbox Studio. I took inspiration from the Flemish artist Clara Peeters who primarily created beautiful still life oil paintings depicting dining tables with different assortments of decadent meals common for aristocratic living of the time period. Clara Peeters' works were notable for her mastery of the Baroque style and for being one of the earliest artists to include hidden self-portraits usually reflecting in the brass or glass subjects in her paintings. Her use of rich dark tones accented by sharp light colors is an aesthetic I aimed to replicate in this web map. I hope you will enjoy exploring the included map.</p>
+            </div>
+        </div>
 
-        <p class="lightGray">The goal of my submission for the Lab 3 assignment was to compose a web map in the style of
-        17th century Baroque paintings using Mapbox Studio. I took inspiration from the Flemish artist
-        Clara Peeters who primerarly created beautiful still life oil paintings depicting dining tables with
-        different assortments of decadent meals common for aristocratic living of the time period.
-        Clara Peeters' works were notable for her mastery of the Baroque style and for being one of the
-        earliest artist to include hidden self-portraits usually reflecting in the brass or glass subjects
-        in her paintings. Her use of rich dark tones accented by sharp light colors is an aesthetic I aimed
-        to replicate in this web map. I hope you will enjoy exploring the included map.</p>
+        <!--image block-->
+        <div class="row">
+            <div class="center">
+                <img class="fit" src="assets/Lab3_Baroque_Style.PNG">
+                <p>Inspired by the Baroque style, this map features rich dark tones and sharp light colors.</p>
+            </div>
+        </div>
 
-        <a id="specialLink" href="https://geography.wisc.edu/cartography/">Link Text</a>
+        <!--side-by-side image and text block-->
+        <div class="row">
+            <div class="left">
+                <p class="vert-center">This map style is inspired by Clara Peeters' still life paintings.</p>
+            </div>
+            <div class="right">
+                <img class="fit" src="assets/clara-peeters-still-life.png">
+            </div>
+        </div>
 
+        <!--scrollmap section-->
+        <div class="scroll-container">    
+            <!--background images-->
+            <div class="background-item">
+                <img src="assets/background1.png" data-slide="0" class="fill vert-center">
+                <img src="assets/background2.png" data-slide="1" class="fill vert-center hidden">
+                <img src="assets/background3.png" data-slide="2" class="fill vert-center hidden">
+                <img src="assets/background4.png" data-slide="3" class="fill vert-center hidden">
+            </div>
+            <!--foreground text blocks-->
+            <div class="foreground-item no-event">
+                <div class="row">
+                    <div class="center background-transparent rounded">
+                        <p class="no-margin">Explore various geographic locations with Baroque-inspired aesthetics.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left background-transparent rounded">
+                        <p class="no-margin">Experience the artistic influence in map design.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center background-transparent rounded">
+                        <p class="no-margin">Discover the blend of art and geography.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="left background-transparent rounded">
+                        <p class="no-margin">See how historical art styles can influence modern cartography.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <img src="assets/Lab3_Baroque_Style.PNG"></img>
+        <!--Mapbox iframe-->
+        <div class="row no-margin">
+            <div class="center-wide">
+                <p>See the full map style here!</p>
+                <iframe width='100%' height='700px' src="https://api.mapbox.com/styles/v1/seanmcclure/cm3mps6cf00hh01r271wy7gg4.html?title=false&access_token=pk.eyJ1Ijoic2Vhbm1jY2x1cmUiLCJhIjoiY20zZ295OTV4MDcxYjJycHA1dXlodjNjciJ9.XA0kTMpHT-dTIdRTcUryTg&zoomwheel=false#5.21/43.606/-84.643" title="Baroque Style Web Map" style="border:none;"></iframe>
+            </div>
+        </div>
 
+        <!--text block-->
+        <div class="row sm-margin">
+            <div class="center">
+                <div class="credits">
+                    <hr>
+                    <p><b>Credits:</b></p>
+                    <p>Map created with Mapbox Studio</p>
+                    <p>Data from OpenStreetMap</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        
-        <!--you can also use this space for internal scripts;
-        place these within <script> tags-->
-
-        <!--put your external script links here-->
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
+    <script type="text/javascript" src="./lib/scrollmap.js"></script>
+    <script type="text/javascript" src="./lib/bootstrap.min.js"></script>
+</body>
 </html>

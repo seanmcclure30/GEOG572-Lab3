@@ -29,6 +29,14 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.content2 {
+    font-family: 'Charm', cursive;
+    font-size: 40px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    padding-top: 150px;
+}
+
 .title-image {
     width: 50%;
     height: auto;

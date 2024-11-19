@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    overflow-y: scroll; /* Allow vertical scrolling */
     background-image: url("../assets/background_image.png");
     background-repeat: repeat;
 }
@@ -46,6 +47,26 @@ body {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content-image {
+    max-width: 40%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.content-text {
+    font-family: 'Charm', cursive;
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
 /* Custom font styles */

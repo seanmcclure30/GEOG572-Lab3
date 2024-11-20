@@ -78,8 +78,17 @@ body {
 }
 
 .content-image2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
 
-/* Custom font styles */
+.content-image2 img {
+    width: 30%;
+    height: auto;
+}
+
 .charm-regular {
     font-family: "Charm", cursive;
     font-weight: 400;
